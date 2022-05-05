@@ -140,16 +140,27 @@ console.log(upperFirst("this is nice"))
 */
 
 function cutString(CutThis){
-    
-    CutThis.slice(2,length()-1)
-    return CutThis
+    i=1
+    j=CutThis.length-1
+    return (CutThis.slice(i,j))
 }
 console.log(cutString("Paper"))
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
 
-/* WRITE YOUR ANSWER HERE */
+function giveMeRandom(n){
+    i = n-1
+    arrayRNG = []
+   arrayRNG.length = n
+    while (i >= 0) {
+        
+        arrayRNG[i] = i
+        i--
+    }
+    return arrayRNG
+}
+console.log(giveMeRandom(4))
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
