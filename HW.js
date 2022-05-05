@@ -42,11 +42,12 @@ console.log(Sum)
 */
 console.log("\nexercise 3\n")
 function crazyDiff(number){
+    result = number - 19
+    
     if(number>19){
-        result = number - 19
         return result*3
     }
-    result = 19 - number
+    result = result*-1
     return result
 }
 
@@ -88,13 +89,17 @@ function check3and7(n){
     result = n%7 === 0
     if (result === true){
         return result
+        console.log(n," ", "is a multiple of 7")
     }else{
-        result = n%3 ===0
-        if (result === true){
+        result = n%3 === 0
+        if (result === true){   
             return result
+            console.log(n," ", "is a multiple of 3")
     }
+    
 }
-return result}
+return result
+console.log(n," ", "is no a multiple of 7 or 3")}
 let check = check3and7(21)
 console.log(check)
 /* EXERCISE 7
@@ -155,7 +160,7 @@ function giveMeRandom(n){
    arrayRNG.length = n
     while (i >= 0) {
         
-        arrayRNG[i] = i
+        arrayRNG[i] = Math.floor(Math.random() * 10)
         i--
     }
     return arrayRNG

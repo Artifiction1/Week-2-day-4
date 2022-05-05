@@ -76,11 +76,22 @@
 */
 
 function matrixGenerator(x,y){
-    matrix = []
+    matrix = [],[]
     matrix.length = x
+    j = 0
+    s=0
+    while(j<y){
+        i = 0
+        while (i<x){
+            matrix[j][i] = s
+            y++
+            i++
+        }
+        j++
+    }
 
 }
-
+console.log(matrixGenerator(3,4))
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
 */
