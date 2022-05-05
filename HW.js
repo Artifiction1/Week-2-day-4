@@ -11,7 +11,7 @@ ASSIGNMENT RULES
 /* EXERCISE 1
  Write a function called "area" which receives 2 parameters (l1, l2) and calculates the area of the associated rectangle.
 */
-
+console.log("\nexercise 1\n")
 function area(sizeH, sizeW){
     areaSize = sizeH*sizeW
     return areaSize
@@ -23,7 +23,7 @@ console.log(rectangle)
  Write a function called "crazySum" which receives two integers as parameters.
  It should return the sum of those two values, but if the two values are the same then it should return their sum multiplied by 3.
 */
-
+console.log("\nexercise 2\n")
 function crazySum(sum1, sum2){
     result = sum1+sum2
     if(sum1 === sum2){
@@ -40,7 +40,7 @@ console.log(Sum)
  Write a function called "crazyDiff" that computes the absolute difference between a given number and 19.
  It should return triple their absolute difference if the given number is greater than 19.
 */
-
+console.log("\nexercise 3\n")
 function crazyDiff(number){
     if(number>19){
         result = number - 19
@@ -56,7 +56,7 @@ console.log(Diff)
 /* EXERCISE 4
  Write a function called "boundary" which accept an integer parameter n and returns true if n is within 20 and 100 (included) or if n it's equal to 400.
 */
-
+console.log("\nexercise 4\n")
 function boundary(n){
 result = (n>=20&&n<=100)|| n === 400
 return result
@@ -68,7 +68,7 @@ console.log(boundry)
  Write a function called "strivify" which accepts a string as a parameter.
  It should add the word "Strive" in front of the given string, but if the given string already begins with "Strive", then it should just return the original string.
 */
-
+console.log("\nexercise 5\n")
 function strivify(Strive){
     result = Strive.toLowerCase() === "strive" 
     if(result === true){
@@ -83,7 +83,7 @@ console.log(Striv)
  Write a function called "check3and7" which accepts a positive number as a parameter and checks if it is a multiple of 3 or a multiple of 7.
  HINT: Modulus Operator
 */
-
+console.log("\nexercise 6\n")
 function check3and7(n){
     result = n%7 === 0
     if (result === true){
@@ -100,7 +100,7 @@ console.log(check)
 /* EXERCISE 7
  Write a function called "reverseString" which programmatically reverses a given string (es.: Strive => evirtS).
 */
-
+console.log("\nexercise 7\n")
 function reverseString(stringR){
     stringRR = stringR
 let i = 0
@@ -124,7 +124,7 @@ console.log(reverseString("Strive"))
 /* EXERCISE 8
  Write a function called "upperFirst" which capitalizes the first letter of each word of a given string passed as a parameter.
 */
-
+console.log("\nexercise 8\n")
 function upperFirst(stringUP){
     stringUPP = stringUP.split(" ");
 
@@ -138,7 +138,7 @@ console.log(upperFirst("this is nice"))
 /* EXERCISE 9
  Write a function called "cutString" which creates a new string without the first and last character of a given string passed as a parameter.
 */
-
+console.log("\nexercise 9\n")
 function cutString(CutThis){
     i=1
     j=CutThis.length-1
@@ -148,7 +148,7 @@ console.log(cutString("Paper"))
 /* EXERCISE 10
  Write a function called "giveMeRandom" which accepts a number n and returns an array containing n random numbers between 0 and 10.
 */
-
+console.log("\nexercise 10\n")
 function giveMeRandom(n){
     i = n-1
     arrayRNG = []

@@ -75,7 +75,11 @@
  "10","11","12"]
 */
 
-/* WRITE YOUR ANSWER HERE */
+function matrixGenerator(x,y){
+    matrix = []
+    matrix.length = x
+
+}
 
 /* WHEN YOU ARE FINISHED
  Commit and push the code to your personal GitHub repository; then post the link of your commit on the Homework section of today's Eduflow.
